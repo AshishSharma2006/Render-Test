@@ -147,11 +147,11 @@ def stats(update, context):
 def start(update, context):
     buttons = ButtonMaker()
     if config_dict['EMOJI_THEME']:
-        buttons.buildbutton(f"😎 {config_dict['START_BTN1_NAME']}", f"{config_dict['START_BTN1_URL']}")
-        buttons.buildbutton(f"🔥 {config_dict['START_BTN2_NAME']}", f"{START_BTN2_URL}")
+        buttons.buildbutton(f"😎 {config_dict['Leech/Mirror Group']}", f"{config_dict['https://t.me/Eliteflix_Leech_Group']}")
+        buttons.buildbutton(f"🔥 {config_dict['Owner']}", f"{https://t.me/AshishSharmaLegend}")
     else:
-        buttons.buildbutton(f"{config_dict['START_BTN1_NAME']}", f"{config_dict['START_BTN1_URL']}")
-        buttons.buildbutton(f"{config_dict['START_BTN2_NAME']}", f"{config_dict['START_BTN2_URL']}")
+        buttons.buildbutton(f"{config_dict['START_BTN1_NAME']}", f"{config_dict['https://t.me/Eliteflix_Leech_Group']}")
+        buttons.buildbutton(f"{config_dict['START_BTN2_NAME']}", f"{config_dict['https://t.me/AshishSharmaLegend']}")
     reply_markup = buttons.build_menu(2)
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''This bot can mirror all your links to Google Drive!
@@ -203,7 +203,7 @@ def log(update, context):
 
 
 help_string = '''
-<b><a href='https://github.com/weebzone/WZML'>WeebZone</a></b> - The Ultimate Telegram MIrror-Leech Bot to Upload Your File & Link in Google Drive & Telegram
+<b><a href='https://t.me/Eliteflix_Official'>Eliteflix</a></b> - The Ultimate Telegram MIrror-Leech Bot to Upload Your File & Link in Google Drive & Telegram
 Choose a help category:
 '''
 
